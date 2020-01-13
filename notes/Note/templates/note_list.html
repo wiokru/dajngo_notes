@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- <div class="content container"> -->
+        <!-- <div class="row"> -->
+            <!-- <div class="col-md-12"> -->
+            <ul>
+                {% for note in notes %}
+                <li>
+                    <div>
+                        <a href="{% url 'note_details' pk=note.id %}" class="fill-div">
+                        <div class="date">
+                            <p>Created: {{ note.created_date }}</p>
+                            <p>Last Modified: {{ note.modified_date }}</p>
+                        </div>
+                        <div class="note-content-title">
+                        <h2>
+                            <!-- <a href="{% url 'note_details' pk=note.id %}"> -->
+                                {{ note.title }}
+                            <!-- </a> -->
+                        </h2>
+                        </div>
+                        <!-- <p>{{ note.text|linebreaksbr }}</p> -->
+                        <div class="note-content-buttons">
+                            <a href="{% url 'note_edit' pk=note.id %}"><span class="glyphicon glyphicon-pencil"></span></a>
+                            <a href="{% url 'note_delete' pk=note.id %}"><span class="glyphicon glyphicon-trash"></span></a>
+                        </div>
+                        </a>    
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            <!-- </div>
+        </div>
+    </div> -->
+{% endblock %}

@@ -1,0 +1,123 @@
+.page-header {
+    background-color: #1c94f7;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Arial', cursive;
+}
+
+.date {
+    color: #828282;
+    padding-bottom: 1em;
+    font-size: 13px;
+}
+
+.save {
+    float: right;
+}
+
+.note-form textarea, .note-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.note h2 a, .note h2 a:visited {
+    color: #000000;
+}
+
+.button {
+    background-color: #0b385e; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 100%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0b385e;
+}
+
+.button1:hover {
+    background-color: #0b385e;
+    color: white;
+}
+
+
+ul,li{
+    list-style-type: none;
+  }
+
+  ul{
+    overflow: hidden;
+    padding: 1em;
+  }
+
+  ul li{
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:inline-table;
+    height:18em;
+    width:18em;
+    position: relative;
+    padding:1em;
+    margin:1em;
+    float:left;
+  }
+  /* ul li{
+    margin:1em;
+    float:left;
+    position: relative;
+  } */
+
+  .note-content-buttons {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0.5em;
+  }
+
+  .note-content-title {
+      position: absolute;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+      -o-text-overflow: ellipsis;
+      -webkit-line-clamp: ellipsis;
+      width: 15em;
+}
+
+a.fill-div {
+    position: absolute;
+    height: 18em;
+    width: 18em;
+    text-decoration: none;
+}

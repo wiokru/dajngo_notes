@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Delete note</h2>
+                <form method="POST" class="note-form">{% csrf_token %}
+                    Are you sure you want to delete note "{{ note.title }}"?
+                    <button type="submit" class="button button1">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

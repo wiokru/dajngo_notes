@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Edit note</h2>
+                <form method="POST" class="note-form">{% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="button button1">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+        
+{% endblock %}
