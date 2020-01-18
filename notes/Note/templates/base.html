@@ -5,11 +5,14 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baskervville|Montserrat|Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/notes.css' %}">
     </head>
     <body>
         <div class="page-header">
             <a href="{% url 'note_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <a href="/" class="top-menu"><span class="glyphicon glyphicon-home"></span></a>
             <h1><a href="/">Your Notes</a></h1>
         </div>
         {% block content %}

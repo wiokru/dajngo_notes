@@ -3,7 +3,7 @@
 {% block content %}
     <div class="content container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <h2>New note</h2>
                 <form method="POST" class="note-form">{% csrf_token %}
                     {{ form.as_p }}

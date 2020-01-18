@@ -1,32 +1,79 @@
+body {
+    /* background-color: darkgray; */
+    background-image: url('../images/cork-board.png');
+    font-family: 'Open Sans', sans-serif;
+}
 .page-header {
-    /* background-color: #1c94f7; */
-    background-color: #faebd7;
+    /* background-color: #faebd7; */
+    /* background-color: papayawhip; */
+    /* background-image: url('../images/Melamine-wood-001.png'); */
+    background-image: url('../images/vintage-concrete.png');
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    border: 0 !important;
+    /* Firefox */
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    /* Safari+Chrome */
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    /* Opera */
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     /* color: #ffffff; */
-    color: #000000;
-    font-size: 36pt;
+    color: rgb(53, 19, 19);
+    font-size: 40pt;
     text-decoration: none;
     font-family: Georgia;
     font-weight: bold;
+    text-align: center;
 }
 
 .content {
-    margin-left: 40px;
+    margin: auto;
+    /* width: 50%; */
+    /* margin-left: 40px; */
+    /* background-color: #ece2cd; */
+    background-color: #f1eada;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Arial', cursive;
+h1 {
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Baskervville', serif;
     color: #000000;
+}
+
+h2 {
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Baskervville', serif;
+    font-size: 36px;
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #828282;
+    margin: 1em 0;
+    padding: 0;
 }
 
 .date {
     color: #828282;
     padding: 1em;
-    font-size: 13px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .save {
@@ -69,26 +116,27 @@ h1, h2, h3, h4 {
 .button1 {
     background-color: white; 
     color: black; 
-    border: 2px solid #0b385e;
+    border: 2px solid #00331a;
 }
 
 .button1:hover {
-    background-color: #0b385e;
+    /* background-color: #660033; */
+    background-color: #004d28;
     color: white;
 }
 
-
 ul,li{
     list-style-type: none;
-  }
+}
 
-  ul{
+ul{
     overflow: hidden;
     margin: 1em;
+    margin-top: 4em;
     /* padding: 1em; */
-  }
+}
 
-  ul li{
+ul li{
     text-decoration:none;
     color:#000;
     background:#ffc;
@@ -105,9 +153,9 @@ ul,li{
     -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     /* Opera */
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  }
+}
 
-  ul li:nth-child(2n) {
+ul li:nth-child(4n + 1) {
     text-decoration:none;
     color:#000;
     background:#cfc;
@@ -124,9 +172,9 @@ ul,li{
     -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     /* Opera */
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  }
+}
 
-  ul li:nth-child(3n) {
+ul li:nth-child(4n + 2) {
     text-decoration:none;
     color:#000;
     background:#ccf;
@@ -143,9 +191,9 @@ ul,li{
     -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     /* Opera */
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  }
+}
 
-  ul li:nth-child(4n) {
+ul li:nth-child(4n + 3) {
     text-decoration:none;
     color:#000;
     background:#fcf;
@@ -162,29 +210,32 @@ ul,li{
     -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     /* Opera */
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  }
+}
   /* ul li{
     margin:1em;
     float:left;
     position: relative;
   } */
 
-  .note-content-buttons {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 0.7em;
-  }
+.note-content-buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.7em;
+    font-size: 13pt;
+}
 
-  .note-content-title {
-      position: absolute;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: block;
-      -o-text-overflow: ellipsis;
-      -webkit-line-clamp: ellipsis;
-      width: 16.5em;
-      padding-left: 15;
+.note-content-title {
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    -o-text-overflow: ellipsis;
+    -webkit-line-clamp: ellipsis;
+    width: 16.5em;
+    padding-left: 15pt;
+    padding-top: 8pt;
 }
 
 a.fill-div {
@@ -199,4 +250,13 @@ a.fill-div {
 .glyphicon {
     padding: 3;
     color: #000000;
+}
+
+.note-details-title {
+    /* text-align: center; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    -o-text-overflow: ellipsis;
+    -webkit-line-clamp: ellipsis;
 }

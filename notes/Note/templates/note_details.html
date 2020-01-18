@@ -3,13 +3,20 @@
 {% block content %}
     <div class="content container">
         <div class="row">
-            <div class="col-md-8">
-                <h2>Title: {{ note.title }}</h2>
-                <p>{{ note.text|linebreaksbr }}</p>
+            <div class="col-md-12">
                 <div class="date">
                     <p>Created: {{ note.created_date }}</p>
                     <p>Last Modified: {{ note.modified_date }}</p>
                 </div>
+                <br>
+                <div class="note-details-title">
+                    <h2>{{ note.title }}</h2>
+                </div>
+                <hr>
+                <br>
+                <h3>
+                    {{ note.text|linebreaksbr }}
+                </h3>
                 <h2>
                     <a href="{% url 'note_list' %}"><span class="glyphicon glyphicon-arrow-left"></span></a>
                 </h2>
